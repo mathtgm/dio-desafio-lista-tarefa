@@ -1,0 +1,56 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    text-align: center;
+    padding: 10px;
+}
+
+.container input {
+    border: 0px solid transparent;
+    background-color: cornsilk;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.container #adicionar {
+    border: 0px solid transparent;
+    border-radius: 3px;
+    height: 40px;
+    background-color: chocolate;
+    color: white;
+    font-weight: bolder;
+}
+
+.container ol {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    border: 1px solid grey;
+    
+}
+
+.container ol li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgrey;
+}
+
+.container ol li input{
+    margin-right: 10px;
+}
+
+#listaTarefas input:checked ~ span {
+	text-decoration: line-through;
+    color: red;
+    font-weight: bolder;
+}
